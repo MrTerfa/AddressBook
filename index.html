@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Address Book</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div id="container">
+            <div class="header">
+                <h2>My Address Book</h2>
+            </div>
+
+            <div class="wrapper">
+                <div class="floatLeft" >
+                    <h3>Available Contacts</h3>
+                    <ul id="listOfContacts"></ul>
+                </div>
+                        
+                <div class="floatRight">
+                    <h3>Add a Contact</h3>
+                    <form name="addressBook">
+                    <div class="formGroup">
+                        <label for="fullname">Fullname</label>
+                        <input type="text" name="fullname" id="fullname" class="formElements" required>
+                    </div>
+                    <div>
+                        <label for="address">Address</label>
+                        <textarea name="address" id="address" cols="30" rows="10" class="formElements" required></textarea>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="formElements" required>
+                    </div>
+                    <div>
+                        <label for="phoneNumber">Mobile number</label>
+                        <input type="tel" name="phoneNumber" id="phoneNumber" class="formElements" required>
+                    </div>
+                    <div>
+                        <button type="submit" id="submit" class="submit">Add Contact</button>
+                    </div>
+                    </form>
+                </div>
+            </div>  
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
